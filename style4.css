@@ -483,3 +483,58 @@ footer ul li a:hover {
     cursor: pointer;
     font-size: 1.1em;
 }
+
+/* ======================== */
+/* PARALLAX EFFECT */
+/* ======================== */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Outstanding.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: translateY(0);
+    transition: transform 0.1s ease-out;
+}
+
+/* Fallback for the background color if image isn't available */
+.hero-section {
+    background-color: #004d99;
+}
+
+
+/* ======================== */
+/* SCROLL-TO-TOP BUTTON */
+/* ======================== */
+#scroll-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    font-size: 24px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    opacity: 0.8;
+}
