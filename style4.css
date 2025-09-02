@@ -109,7 +109,7 @@ h2 {
 /* HERO SECTION */
 /* ======================== */
 .hero-section {
-    background-image: url('Outstanding.jpg'); /* This is the new line */
+    background-image: url('academic background special.jpg'); /* This is the new line */
     background-color: #004d99; /* This will be a fallback color */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image within the section */
@@ -188,7 +188,7 @@ h2 {
 /* FOOTER STYLES */
 /* ======================== */
 footer {
-    background-image: url('Tech background awesome.jpg'); /* New line for the image */
+    background-image: url('academic background special.jpg'); /* New line for the image */
     background-color: #333; /* Fallback color */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image within the section */
