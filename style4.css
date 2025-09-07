@@ -405,83 +405,69 @@ footer ul li a:hover {
     color: #fff;
 }
 
-/* ======================== */
-/* CONTACT PAGE STYLES */
-/* ======================== */
-.contact-details {
-    padding: 60px 0;
+/* /* --- Contact Form Section --- */
+.contact-section {
+    padding: 4rem 0;
     text-align: center;
+    background: #f9f9f9;
 }
 
-.contact-details h2 {
-    color: #004d99;
-}
-
-.contact-details p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.contact-details a {
-    color: #004d99;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-form-section {
-    background-color: #fff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.contact-form-section h2 {
-    color: #004d99;
+.contact-section h2 {
+    margin-bottom: 2rem;
 }
 
 #contactForm {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
     text-align: left;
-    padding: 20px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
     display: block;
+    margin-bottom: 0.5rem;
     font-weight: bold;
-    margin-bottom: 8px;
-    color: #333;
+    color: #555;
 }
 
-.form-group input,
+.form-group input[type="text"],
+.form-group input[type="email"],
 .form-group textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #ff6600;
     outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
-.form-group textarea {
-    resize: vertical;
-}
-
-/* Style the submit button */
-#contactForm.cta-button {
-    width: 100%;
-    border: none;
+.cta-button {
+    /* Existing button styles from previous CSS */
+    display: inline-block;
+    width: auto;
     cursor: pointer;
-    font-size: 1.1em;
+}
+
+/* --- Media Queries for smaller screens --- */
+@media (max-width: 768px) {
+    #contactForm {
+        padding: 1.5rem;
+    }
 }
 
 /* ======================== */
